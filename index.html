@@ -12,12 +12,46 @@
 				text-align: right;
 				margin-top: 40px;
 			}
-			.love {
+			.love-box {
+				display: -webkit-flex;
 				display: flex;
 				justify-content: center;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
 			}
-			.love img{
-				height: 160px;
+			.love {
+				display: inline-block;
+				position: relative;
+			}
+			.love:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 30px;
+				border-radius: 20px;
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				background: #f00;
+			}
+			.love:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 8px;
+				width: 20px;
+				height: 30px;
+				border-radius: 20px;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+				background: #f00;
 			}
 		</style>
 	</head>
@@ -32,11 +66,11 @@
 			<p>在认识的期间，我也认识了其他的朋友，很多网友些，都因为一个误会，或者其他的原因，各自离去。只有你，还陪着我。真的超级爱你，谢谢你的陪伴。</p>     
 			<p>虽然我们从未正式见过面，但我相信，见面的你我，应该如老朋友一般亲切。</p>    
 			<p>别的话，也不知道该说些什么，只能对你说，只要你不离，我便不弃。</p>     
-			<p>爱你哟，我亲爱的老婆。</p>    
-			<div class="love">
-				<img src="./love.jpg" alt="">
+			<p>爱你哟，我亲爱的老婆。</p>   
+			<div class="love-box">
+				<div class="love"></div>
 			</div>
-			<div class="toMine">你的老公o(≧v≦)o</div>  
+			<div class="toMine">你的老公o(≧v≦)o</div> 
 		</div>
 	</body>
 </html>
